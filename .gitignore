@@ -1,25 +1,29 @@
 # Local .terraform directories
 **/.terraform/*
 
-# .tfstate files
+# State files
 *.tfstate
 *.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
 
 # Crash log files
 crash.log
 crash.*.log
 
-# Exclude sensitive files
+# Sensitive variables files
 *.tfvars
 *.tfvars.json
+!terraform/environments/dev/terraform.tfvars
 
-# CLI configuration files
+# IDE files
+*.iml
+.idea/
+.vscode/
+
+# Local CLI configuration files
 .terraformrc
 terraform.rc
 
 # MacOS files
 .DS_Store
-
-
-# Intellij
-./.idea
