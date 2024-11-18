@@ -8,6 +8,11 @@ output "zone_id" {
   description = "Route53 zone ID"
 }
 
+output "nameservers" {
+  value = aws_route53_zone.primary.name_servers
+  description = "The nameservers for the Route53 zone"
+}
+
 output "domain_name" {
   value       = var.domain_name
   description = "Domain name"

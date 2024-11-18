@@ -27,3 +27,9 @@ output "cognito_domain" {
   description = "Cognito domain"
   value       = module.auth.cognito_domain
 }
+
+output "nameservers" {
+  value = module.networking.nameservers
+  description = "The nameservers for the Route53 zone"
+}
+
