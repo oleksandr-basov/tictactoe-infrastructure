@@ -4,14 +4,32 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+variable "project_name" {
+  description = "Project name"
+  type        = string
+  default     = "tictactoe"
+}
+
 variable "environment" {
   description = "Environment name"
   type        = string
   default     = "dev"
 }
 
-variable "project_name" {
-  description = "Project name"
+variable "domain_name" {
+  description = "Domain name for the application"
   type        = string
-  default     = "tictactoe"
+  default     = "game.basov.dev"
+}
+
+variable "root_domain_name" {
+  description = "Root domain name"
+  type        = string
+  default     = "basov.dev"
+}
+
+variable "lambda_version" {
+  description = "Lambda version"
+  type        = string
+  default     = "latest"
 }
